@@ -18,7 +18,7 @@ class GithubService
 
   end
 
-  def authenticate!
+  def authenticate!(client_id, client_secret, code)
 
   end
 end
