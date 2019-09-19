@@ -6,7 +6,7 @@ class GithubService
     @access_token = access_hash["access_token"] if access_hash
   end
 
-  def create_repo
+  def create_repo(name)
     Faraday.post "https://api.github.com/user/repos", {name: name}.to_json, {'Authorization' => "token #{self.access_token}", 'Accept' => 'application/json'}
   end
 
