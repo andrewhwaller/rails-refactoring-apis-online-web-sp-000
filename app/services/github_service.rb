@@ -6,7 +6,7 @@ class GithubService
 
   end
 
-  def create_repo
+  def create_repo(name)
 
   end
 
